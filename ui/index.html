@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AccessDesk — Self Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <nav class="sidebar">
+      <div class="search-wrap">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search software…">
+      </div>
+      <div class="categories" id="categories"></div>
+      <div class="sidebar-footer">
+        <a class="nav-link" data-view="notifications">🔔 Notifications</a>
+        <a class="nav-link" data-view="history">🕐 History</a>
+        <div class="user-bar">
+          <span class="avatar">👤</span>
+          <input type="text" id="employeeId" class="employee-input" value="emp-001" placeholder="Employee ID" style="display:none;">
+          <span id="employeeName" style="font-size:13px;font-weight:500;">Princy Gandhi</span>
+          <span class="self-service-label">Self Service</span>
+        </div>
+      </div>
+    </nav>
+    <main class="content" id="mainContent">
+      <div id="view-catalog" class="view active"></div>
+      <div id="view-notifications" class="view"></div>
+      <div id="view-history" class="view"></div>
+      <div id="view-profile" class="view"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+  <div id="modal" class="modal hidden"></div>
+  <button id="chatToggle" class="chat-toggle" title="Ask AI Assistant">💬</button>
+  <div id="chatPanel" class="chat-panel hidden">
+    <div class="chat-header">
+      <span>🤖 AI Assistant</span>
+      <button id="chatClose" class="chat-close">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">Hi! I can help you find the right software. Try "I need a tool for screen recording" or "I want to edit code".</div>
+    </div>
+    <div class="chat-input-bar">
+      <input type="text" id="chatInput" class="chat-field" placeholder="What do you need?" autocomplete="off">
+      <button id="chatSend" class="chat-send">→</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AccessDesk — Manager Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <nav class="sidebar">
+      <div class="search-wrap" style="padding:20px 16px;">
+        <div style="font-size:16px;font-weight:700;color:var(--text);">🔑 Manager Portal</div>
+      </div>
+      <div class="categories">
+        <a class="nav-link active" data-view="approvals">📋 Pending Approvals</a>
+        <a class="nav-link" data-view="resolved">✅ Resolved</a>
+      </div>
+      <div class="sidebar-footer">
+        <div class="user-bar">
+          <span class="avatar">👤</span>
+          <span style="font-size:13px;font-weight:500;">Manager</span>
+          <span class="self-service-label">Approver</span>
+        </div>
+      </div>
+    </nav>
+    <main class="content" id="mainContent">
+      <div id="view-approvals" class="view active"></div>
+      <div id="view-resolved" class="view"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+  <div id="modal" class="modal hidden"></div>
+  <button id="chatToggle" class="chat-toggle" title="Ask AI Assistant">💬</button>
+  <div id="chatPanel" class="chat-panel hidden">
+    <div class="chat-header">
+      <span>🤖 AI Assistant</span>
+      <button id="chatClose" class="chat-close">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">Hi Manager! I can help you look up employee details. Try "Who is emp-001?" or "What's the job level of emp-002?"</div>
+    </div>
+    <div class="chat-input-bar">
+      <input type="text" id="chatInput" class="chat-field" placeholder="Ask about an employee…" autocomplete="off">
+      <button id="chatSend" class="chat-send">→</button>
+    </div>
+  </div>
+  <script src="manager-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "access-desk-infra",
+  "version": "1.0.0",
+  "description": "CDK infrastructure for AccessDesk",
+  "scripts": {
+    "build": "tsc",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "aws-cdk-lib": "^2.170.0",
+    "constructs": "^10.4.2",
+    "typescript": "^5.7.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.170.0",
+    "constructs": "^10.4.2"
+  }
+}
