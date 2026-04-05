@@ -2,7 +2,7 @@
 
 ## Demo
 
-<video src="AccessDesk.mov" controls width="100%"></video>
+<video src="AccessDesk.mp4" controls width="100%"></video>
 
 
 AI-powered IT self-service portal that automates software access provisioning. Built with Node.js, Express, and Amazon Bedrock (Claude), it features an access agent that auto-grants or escalates requests based on job-level policies, an LLM chat assistant for natural language tool discovery and employee lookups, a rules engine with configurable per-tool approval chains, secure token-based approval workflows with email notifications, dual portals (employee self-service + manager approval dashboard), real-time request lifecycle tracking, and a DynamoDB-backed data layer with CDK infrastructure for production deployment on AWS.
