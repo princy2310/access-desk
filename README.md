@@ -4,6 +4,10 @@
 
 [Watch the video](https://www.youtube.com/watch?v=XM2j-hruy2k)
 
+## Write-up
+
+[Build Your Own AI-Powered IT Self-Service Portal](https://princygandhi.substack.com/p/build-your-own-ai-powered-it-self) covers the architecture and why the rules engine, not the language model, owns every access decision.
+
 
 
 AI-powered IT self-service portal that automates software access provisioning. Built with Node.js, Express, and Amazon Bedrock (Claude), it features an access agent that auto-grants or escalates requests based on job-level policies, an LLM chat assistant for natural language tool discovery and employee lookups, a rules engine with configurable per-tool approval chains, secure token-based approval workflows with email notifications, dual portals (employee self-service + manager approval dashboard), real-time request lifecycle tracking, and a DynamoDB-backed data layer with CDK infrastructure for production deployment on AWS.
